@@ -1,0 +1,15 @@
+---
+title: "You have been paid"
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <h2 style="margin:0 0 16px; color:#111827; font-size:20px;">Hi [[employeeName]],</h2>
+    <p style="margin:0 0 16px; color:#374151; font-size:14px; line-height:22px;">
+      Good news — your salary from <strong>[[companyName]]</strong> has been paid.
+    </p>
+    <p style="margin:0 0 4px; color:#6b7280; font-size:13px;">Amount</p>
+    <p style="margin:0 0 16px; color:#111827; font-size:24px; font-weight:bold;">[[amount]]</p>
+    <p style="margin:0; color:#6b7280; font-size:12px;">Reference: [[reference]]</p>
+  </block>
+</extends>

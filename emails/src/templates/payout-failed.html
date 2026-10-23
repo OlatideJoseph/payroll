@@ -1,0 +1,16 @@
+---
+title: "Payout failed"
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <h2 style="margin:0 0 16px; color:#111827; font-size:20px;">Hi [[employeeName]],</h2>
+    <p style="margin:0 0 16px; color:#374151; font-size:14px; line-height:22px;">
+      We tried to pay your salary from <strong>[[companyName]]</strong> but the transfer did not go through.
+    </p>
+    <p style="margin:0 0 4px; color:#6b7280; font-size:13px;">Amount</p>
+    <p style="margin:0 0 16px; color:#111827; font-size:24px; font-weight:bold;">[[amount]]</p>
+    <p style="margin:0 0 16px; color:#b91c1c; font-size:13px;">Reason: [[reason]]</p>
+    <p style="margin:0; color:#6b7280; font-size:13px;">Your employer has been notified and may retry the payout.</p>
+  </block>
+</extends>

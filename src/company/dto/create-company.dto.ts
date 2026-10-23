@@ -1,6 +1,14 @@
+import { ApiProperty } from '@nestjs/swagger';
+import { IsNotEmpty, IsString } from 'class-validator';
+
 export class CreateCompanyDto {
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
   name: string;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
   address: string;
-  users: string[]; // Array of user IDs
-  adminUsers: string[]; // Array of admin user IDs
 }

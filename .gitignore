@@ -3,6 +3,10 @@
 /node_modules
 /build
 
+# Maizzle build output
+/emails/build_local
+/emails/build_production
+
 # Logs
 logs
 *.log
